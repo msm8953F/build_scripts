@@ -11,7 +11,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b Axion-qpr2 device/xiaomi/daisy
+git clone https://github.com/msm8953F/android_device_xiaomi_daisy -b Axion-qpr2 device/xiaomi/daisy
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -35,7 +35,7 @@ echo "======= Export Done ======"
 
 # aging 
 rm -rf device/xiaomi/daisy
-git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b Axion-qpr2 device/xiaomi/daisy
+git clone https://github.com/msm8953F/android_device_xiaomi_daisy -b Axion-qpr2 device/xiaomi/daisy
 
 # Set up build environment
 source build/envsetup.sh
@@ -43,7 +43,8 @@ echo "====== Envsetup Done ======="
 
 # Lunch
 . build/envsetup.sh
-axion daisy userdebug
+axion daisy user
+axion daisy user gms pico
 axion daisy gms pico
 # Run to prepare our devices list
 # ... now run
