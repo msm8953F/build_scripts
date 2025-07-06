@@ -11,7 +11,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b Infinity-15/qpr2 device/xiaomi/daisy
+git clone https://github.com/msm8953F/android_device_xiaomi_daisy -b Infinity-15/qpr2 device/xiaomi/daisy
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -27,7 +27,7 @@ echo "============="
 
 # repo
 rm -rf device/xiaomi/daisy
-git clone https://github.com/msm8953E/android_device_xiaomi_daisy -b Infinity-15/qpr2 device/xiaomi/daisy
+git clone https://github.com/msm8953F/android_device_xiaomi_daisy -b Infinity-15/qpr2 device/xiaomi/daisy
 
 # play vendor_infinity-priv_keys
 git clone https://github.com/ProjectInfinity-X/vendor_infinity-priv_keys-template vendor/infinity-priv/keys
