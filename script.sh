@@ -39,10 +39,9 @@ cd ../../../
 #echo "========================="
 
 # cherry pick 1
-cd vendor/infinity
-git fetch https://github.com/Gtajisan/vendor_infinity.git
-git cherry-pick  05ca5fb2b7c107395df1a32c16f2f89ecebab218
-cd ../..
+rm -rf vendor/infinity
+git clone https://github.com/frnwot/vendor_infinity.git -b 15 vendor/infinity
+
 
 # Export
 export BUILD_USERNAME=achu 
