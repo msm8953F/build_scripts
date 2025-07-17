@@ -5,7 +5,8 @@ rm -rf android_device_xiaomi_daisy
 
 
 # repo init rom
-repo init -u https://github.com/AxionAOSP/android.git -b lineage-22.2 --git-lfs
+repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs
+
 echo "=================="
 echo "Repo init success"
 echo "=================="
@@ -43,12 +44,6 @@ echo "====== Envsetup Done ======="
 
 # Lunch
 . build/envsetup.sh
-axion daisy user
-axion daisy user gms pico
-axion daisy gms pico
-# Run to prepare our devices list
-# ... now run
-mka bacon
 brunch daisy
 
 
