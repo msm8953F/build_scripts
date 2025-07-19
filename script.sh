@@ -26,7 +26,6 @@ echo "============="
 # remove face unlock 
 #rm -rf packages/apps/FaceUnlock
 
-
 # Export
 export BUILD_USERNAME=achu 
 export BUILD_HOSTNAME=crave
@@ -35,6 +34,8 @@ export SELINUX_IGNORE_NEVERALLOWS=true
 echo "======= Export Done ======"
 
 # aging 
+rm -rf packages/apps/Settings
+git clone https://github.com/frnwot/android_packages_apps_Settings_crd.git -b 15.0 packages/apps/Settings
 rm -rf device/xiaomi/daisy
 git clone https://github.com/msm8953F/android_device_xiaomi_daisy -b Axion-qpr2 device/xiaomi/daisy
 
