@@ -4,9 +4,9 @@ rm -rf .repo/local_manifests/
 rm -rf android_device_xiaomi_daisy
 
 
-# repo init rom
-repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs
-
+# Initialize local repository
+# Initialize local repository
+repo init -u https://github.com/alphadroid-project/manifest -b alpha-15.2 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
@@ -34,8 +34,8 @@ export SELINUX_IGNORE_NEVERALLOWS=true
 echo "======= Export Done ======"
 
 # aging 
-rm -rf packages/apps/Settings
-git clone https://github.com/frnwot/android_packages_apps_Settings_crd.git -b 15.0 packages/apps/Settings
+#rm -rf packages/apps/Settings
+#git clone https://github.com/frnwot/android_packages_apps_Settings_crd.git -b 15.0 packages/apps/Settings
 rm -rf device/xiaomi/daisy
 git clone https://github.com/msm8953F/android_device_xiaomi_daisy -b Axion-qpr2 device/xiaomi/daisy
 
