@@ -5,7 +5,7 @@ rm -rf android_device_xiaomi_daisy
 
 
 # repo init rom
-repo init -u https://github.com/AxionAOSP/android.git -b lineage-22.2 --git-lfs
+repo init -u https://github.com/DerpFest-AOSP/android_manifest.git -b 16 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
@@ -35,7 +35,7 @@ echo "======= Export Done ======"
 
 # aging 
 rm -rf device/xiaomi/daisy
-git clone https://github.com/msm8953F/android_device_xiaomi_daisy -b Axion-qpr2 device/xiaomi/daisy
+git clone https://github.com/frnwot/android_device_xiaomi_daisy_standard -b derp/15 device/xiaomi/daisy
 
 # Set up build environment
 source build/envsetup.sh
@@ -43,12 +43,8 @@ echo "====== Envsetup Done ======="
 
 # Lunch
 . build/envsetup.sh
-axion daisy user
-axion daisy user gms pico
-axion daisy gms pico
+lunch lineage_daisy-bp2a-user
 # Run to prepare our devices list
 # ... now run
-mka bacon
-brunch daisy
-
+mka derp
 
