@@ -33,10 +33,6 @@ export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 export SELINUX_IGNORE_NEVERALLOWS=true
 echo "======= Export Done ======"
 
-# aging 
-rm -rf device/xiaomi/daisy
-git clone https://github.com/frnwot/android_device_xiaomi_daisy_standard -b derp/15 device/xiaomi/daisy
-
 # Set up build environment
 source build/envsetup.sh
 echo "====== Envsetup Done ======="
