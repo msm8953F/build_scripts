@@ -25,6 +25,8 @@ echo "============="
 # remove face unlock 
 #rm -rf packages/apps/FaceUnlock
 
+rm -rf device/xiaomi/daisy
+git clone https://github.com/frnwot/android_device_xiaomi_daisy_standard -b derp/15 device/xiaomi/daisy
 
 # Export
 export BUILD_USERNAME=achu 
