@@ -5,13 +5,13 @@ rm -rf android_device_xiaomi_daisy
 
 
 # repo init rom
-repo init -u https://github.com/DerpFest-AOSP/android_manifest.git -b 16 --git-lfs
+repo init -u https://github.com/ProjectEverest/manifest -b 14 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/msm8953F/android_device_xiaomi_daisy -b Axion-qpr2 device/xiaomi/daisy
+git clone https://github.com/msm8953F/android_device_xiaomi_daisy -b lineage-21 device/xiaomi/daisy
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -26,10 +26,10 @@ echo "============="
 #rm -rf packages/apps/FaceUnlock
 
 rm -rf device/xiaomi/daisy
-git clone https://github.com/frnwot/android_device_xiaomi_daisy_standard -b derp/15 device/xiaomi/daisy
+git clone https://github.com/frnwot/android_device_xiaomi_daisy_standard -b lineage-21 device/xiaomi/daisy
 
 # Export
-export BUILD_USERNAME=achu 
+export BUILD_USERNAME=achu_x_shaaim
 export BUILD_HOSTNAME=crave
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 export SELINUX_IGNORE_NEVERALLOWS=true
@@ -41,8 +41,9 @@ echo "====== Envsetup Done ======="
 
 # Lunch
 . build/envsetup.sh
-lunch lineage_daisy-bp2a-user
+lunch lineage_daisy-user
+lunch lineage_daisy-ap2a-user
 # Run to prepare our devices list
 # ... now run
-mka derp
+mka everest
 
