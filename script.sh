@@ -5,8 +5,7 @@ rm -rf android_device_xiaomi_daisy
 
 
 # Initialize local repository
-# Initialize local repository
-repo init -u https://github.com/alphadroid-project/manifest -b alpha-15.2 --git-lfs
+repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
