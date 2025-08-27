@@ -11,7 +11,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/msm8953F/android_device_xiaomi_daisy -b Alpha-15 device/xiaomi/daisy
+#git clone https://github.com/msm8953F/android_device_xiaomi_daisy -b Alpha-15 device/xiaomi/daisy
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -36,7 +36,7 @@ echo "======= Export Done ======"
 #rm -rf packages/apps/Settings
 #git clone https://github.com/frnwot/android_packages_apps_Settings_crd.git -b 15.0 packages/apps/Settings
 rm -rf device/xiaomi/daisy
-git clone https://github.com/msm8953F/android_device_xiaomi_daisy -b Alpha-15 device/xiaomi/daisy
+git clone https://github.com/msm8953F/android_device_xiaomi_daisy -b Axion-qpr2 device/xiaomi/daisy
 
 # Set up build environment
 source build/envsetup.sh
